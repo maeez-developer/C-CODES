@@ -1,12 +1,16 @@
 #include<stdio.h>
-void main()
+int main()
 {
-    int a,b;
-    printf("enter 1st value: \n");
-    scanf("%d",&a);
-    printf("enter 2nd value: \n");
-    scanf("%d",&b);
-    printf("after swaping 1st value becomes %d \n",b);
-    printf("after swaping 2nd value becomes %d \n",a);
-
+    int i,sum=0,n;
+    printf("enter a number:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        if(i%2==0)
+           sum=sum+i;
+    }
+    printf("sum of numbers is: %d",sum);
+    return 0;
 }
+
+

@@ -1,10 +1,13 @@
 #include<stdio.h>
-void main()
+int main()
 {
-    float n,g,h;
-    printf("enter gross sales: \n");
-    scanf("%f",&g);
-    h=0.1*g;
-    n=g-h;
-    printf("net sales: %f \n",n);
+    int i,sum=0,n;
+    printf("enter a number:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        sum=sum+i;
+    }
+    printf("sum of numbers is: %d",sum);
+    return 0;
 }

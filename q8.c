@@ -1,17 +1,15 @@
 #include<stdio.h>
-void main()
+int main()
 {
-    float t,a,b,c,avg;
-    printf("enter marks of 1st subject \n");
-    scanf("%f",&a);
-    printf("enter marks of 2nd subject \n");
-    scanf("%f",&b);
-    printf("enter marks of 3rd subject \n");
-    scanf("%f",&c);
-    avg=(a+b+c)/3.0;
-    printf("average marks: %f \n",avg);  
-    t=a+b+c;
-    printf("total marks: %f \n",t);  
-    
-
+    int i,sum=0,n;
+    printf("enter a number:");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        if(i%2!=0)
+           sum=sum+i;
+    }
+    printf("sum of numbers is: %d",sum);
+    return 0;
 }
+

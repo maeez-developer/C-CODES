@@ -1,15 +1,13 @@
-
 #include<stdio.h>
-void main()
+int main()
 {
-    int a;
-    printf("enter a number \n");
-    scanf("%d",&a);
-    
-    if (a%7==0)
-        printf("%d is divisible by 7 \n",a);
-    else
-        printf("%d is not divisible by 7 \n",a); 
-
-
+    int i,n,a=1;
+    printf("enter a number:");
+    scanf("%d",&n);
+    for(i=n;i>=1;i--)
+    {
+        a=a*i;
+    }
+    printf("factorial of %d is %d",n,a);
+    return 0;
 }
